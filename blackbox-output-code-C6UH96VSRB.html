@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Sale - Best Deals!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shoes Sale Extravaganza</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <h2>Up to 50% Off on All Shoes!</h2>
+        <p>Limited time offer. Shop now and save big!</p>
+    </section>
+
+    <section id="products">
+        <h2>Featured Shoes</h2>
+        <input type="text" id="search" placeholder="Search products...">
+        <select id="filter">
+            <option value="all">All Categories</option>
+            <option value="sneakers">Sneakers</option>
+            <option value="boots">Boots</option>
+            <option value="sandals">Sandals</option>
+            <option value="heels">Heels</option>
+            <option value="loafers">Loafers</option>
+            <option value="athletic">Athletic</option>
+        </select>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be populated by JS -->
+        </div>
+        <div id="custom-product-form">
+            <h3>Add Your Own Product</h3>
+            <input type="text" id="custom-name" placeholder="Product Name">
+            <input type="number" id="custom-price" placeholder="Sale Price">
+            <input type="number" id="custom-original" placeholder="Original Price">
+            <select id="custom-category">
+                <option value="sneakers">Sneakers</option>
+                <option value="boots">Boots</option>
+                <option value="sandals">Sandals</option>
+                <option value="heels">Heels</option>
+                <option value="loafers">Loafers</option>
+                <option value="athletic">Athletic</option>
+            </select>
+            <input type="file" id="custom-photo" accept="image/*">
+            <button onclick="addCustomProduct()">Add Product</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Shoes Sale. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
