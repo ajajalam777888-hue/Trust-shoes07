@@ -1,0 +1,8 @@
+const products = [
+    // existing products here...
+    { id: 9, name: 'Formal Shoes', category: 'loafers', price: 65, original: 130, img: 'https://via.placeholder.com/200x150?text=Formal+Shoes' },
+    { id: 10, name: 'Beach Sandals', category: 'sandals', price: 25, original: 50, img: 'https://via.placeholder.com/200x150?text=Beach+Sandals' },
+    { id: 11, name: 'Hiking Boots', category: 'boots', price: 85, original: 170, img: 'https://via.placeholder.com/200x150?text=Hiking+Boots' },
+    // Your provided image for RVCJ Media shoe product (change name/category/price as appropriate)
+    { id: 12, name: 'RVCJ Media Special', category: 'sneakers', price: 55, original: 110, img: 'https://i.imgur.com/mH2qD3B.jpg' }
+];
